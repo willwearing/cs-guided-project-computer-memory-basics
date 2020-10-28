@@ -1,25 +1,21 @@
 """
-In order to solve this challenge you will need to [review the rules of Roman
-Numerals](https://www.mathsisfun.com/roman-numerals.html).
+Given an unsigned integer, write a function that returns the number of '1' bits
+that the integer contains (the
+[Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight))
 
-Given a Roman Numeral (as a string), convert it to an integer. Your input is
-guaranteed to be a Roman Numeral value from 1 to 3999.
+Examples:
 
-Example 1:
+- `hamming_weight(n = 00000000000000000000001000000011) -> 3`
+- `hamming_weight(n = 00000000000000000000000000001000) -> 1`
+- `hamming_weight(n = 11111111111111111111111111111011) -> 31`
 
-Input: "IV"
-Output: 4
+Notes:
 
-Example 2:
-
-Input: "XII"
-Output: 12
-
-Example 3:
-
-Input: "MCMLXXXIV"
-Output: 1984
+- "Unsigned Integers (often called "uints") are just like integers (whole
+numbers) but have the property that they don't have a + or - sign associated
+with them. Thus they are always non-negative (zero or positive). We use uint's
+when we know the value we are counting will always be non-negative."
 """
-def roman_to_integer(roman):
+def hamming_weight(n):
     # Your code here
 
